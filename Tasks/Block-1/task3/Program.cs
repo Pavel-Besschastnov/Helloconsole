@@ -1,19 +1,33 @@
-﻿
-int numberA = Convert.ToInt32("34");
-int numberB = Convert.ToInt32("232");
-int numberC = Convert.ToInt32("13");
-int max = 0;
-if (numberA > numberB)
+﻿int numb = Convert.ToInt32( Console.ReadLine());
+if (numb ==1)
 {
-    max = numberA;
+	Console.WriteLine("понедельник");
 }
-else if (numberB > numberC)
+else if (numb ==2)
 {
-    max = numberB;
+	Console.WriteLine("Вторник");
+}
+else if (numb ==3)
+{
+	Console.WriteLine("Среда");
+}
+else if (numb ==4)
+{
+	Console.WriteLine("Четверг");
+}
+else if (numb ==5)
+{
+	Console.WriteLine("Пятница");
+}
+else if (numb ==6)
+{
+	Console.WriteLine("Суббота");
+}
+else if (numb ==7)
+{
+	Console.WriteLine("Воскресенье");
 }
 else
 {
-    max = numberC;
+	Console.WriteLine("непизвестное день недели");
 }
-Console.Write("максимальноечисло чмсло равно :  ");
-Console.Write(max);
