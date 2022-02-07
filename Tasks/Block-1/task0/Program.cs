@@ -1,5 +1,5 @@
 ﻿Console.Write("Введите число: ");
-int numb = Int32.Parse(Console.ReadLine());
+int numb = Convert.ToInt32(Console.ReadLine());
 
 numb= numb * numb;
 
