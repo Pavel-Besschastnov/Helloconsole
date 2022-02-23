@@ -27,6 +27,6 @@ for (int i = 0; i < array.GetLength(0); i++)
         summ = summ + array[j, i];
 
     }
-    if (summ > 0) Console.WriteLine($"сумма {(i + 1)} столбца : {summ}");
+    if (summ > 0) Console.WriteLine($"Среднее арифметическое {(i + 1)} столбца : {summ/n}");
      summ = 0;
 }
