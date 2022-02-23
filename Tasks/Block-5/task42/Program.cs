@@ -1,17 +1,17 @@
-﻿// Задача 42
-// Определить сколько чисел больше 0 введено с клавиатуры
+﻿
 using static System.Console;
-
-Console.WriteLine("Введите числа:");
-string stroka= Console.ReadLine();
-int count=1;
-byte backnum=0;
-foreach(char a in stroka)
+int num = 0;
+int count = 0;
+do
 {
-int temp=Convert.ToByte(a);
-if((byte)a==32 && (byte)a!=backnum) count++;
-backnum=(byte)a;
+    WriteLine("хотите ввести число? ( y или n )");
+    char chis = char.Parse(ReadLine());
+
+    if (chis != 'y') break;
 
 
-}
-Console.WriteLine($"количество введенных чисел = {count}");
+    WriteLine("введите число :");
+    num = int.Parse(ReadLine());
+    if (num > 0) count++;
+} while (num > 0);
+WriteLine($"сумма введенных чисел, больше 0= {count}");
